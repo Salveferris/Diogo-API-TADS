@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="header" class="row">
+      <div class="trendings-menu col-4 mr-auto ml-auto mt-3 mb-3" onclick="trending()">
+        <img class="trendings-icon" src="images/hashtag.svg">
+        <p class="trendings-title">Melhores da semana</p>
+      </div>
+      <div class="pesquisa input-group col-4 mr-auto ml-auto mt-3 mb-3" id="divpesquisa">
+        <div class="input-group">
+          <input id="pesquisa" type="text" class="form-control" placeholder="Search">
+          <div class="input-group-append">
+            <button class="btn btn-primary" onclick="search()" type="submit">Pesquisar</button>
+          </div>
+        </div>
+      </div>
+      <div class="watchlist-menu col-4 mr-auto ml-auto mt-3 mb-3">
+        <p class="watchlist-title" onclick="watchlist()">Assistir depois</p>
+        <img class="watchlist-icon" src="images/ribbon.svg">
+      </div>
+    </div>
+    <h1>Melhores da semana</h1>
+    <div id="trendings" class="row">
+    </div>
+  </div>
+
+<script src="js/views/movies_cards_view.js"></script>
+<script src="js/controllers/trendings_controller.js"></script>
+<script src="js/controllers/searches_controller.js"></script>
+<script src="js/controllers/watchlists_controller.js"></script>
+<script src="js/controllers/watchedlists_controller.js"></script>
+<script src="js/models/watchlist.js"></script>
+<script src="js/models/watchedlist.js"></script>
+<script src="js/models/data_methods/remove.js"></script>
+<script src="js/models/data_methods/create.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

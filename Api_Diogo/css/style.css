@@ -1,0 +1,43 @@
+body{
+    background-color: darkslategray;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color:  #ab6134;
+}
+
+.movies {
+  text-align: center;  
+}
+
+h5 {
+  height: 65px;
+}
+
+.trendings-menu{
+  cursor: pointer;
+}
+.trendings-icon {
+  width: 25px;
+  height: 25px;
+}
+.trendings-title {
+  display: inline;
+  font-size: 12pt;
+}
+
+.watchlist-icon {
+  width: 25px;
+  height: 25px;
+}
+.watchlist-title {
+  display: inline;
+  font-size: 12pt;
+}
+.watchlist-menu {
+  text-align: right;
+  cursor: pointer;
+}
